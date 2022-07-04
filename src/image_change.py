@@ -10,10 +10,10 @@ from datetime import datetime
 
 STYLE_LOSS_WEIGHT = 1e-05
 batch_size = 1
-CONTENT_IMG_PATH = os.path.join('D:\workspace/python/neuralstyle/images', 'cat2.jpg')
-STYLE_IMG_PATH = os.path.join('D:\workspace/python/neuralstyle/images', 'wave.jpg')
+CONTENT_IMG_PATH = os.path.join('../images', 'cat2.jpg')
+STYLE_IMG_PATH = os.path.join('../images', 'starry_night.jpg')
 IMG_SIZE = 200
-OUTPUT_DIR_PATH = os.path.join('D:\workspace/python/neuralstyle/output', '%s' % datetime.now().strftime('%Y%m%d_%H%M%S'))
+OUTPUT_DIR_PATH = os.path.join('../output', '%s' % datetime.now().strftime('%Y%m%d_%H%M%S'))
 
 os.makedirs(OUTPUT_DIR_PATH, exist_ok=True)
 
